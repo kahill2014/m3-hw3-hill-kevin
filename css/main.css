@@ -13,21 +13,15 @@
   font-size: 18px;
   font-weight: 500;
   color: #050500;
+  cursor: pointer;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 500;
 }
-.logo {
-  width: 325px;
-  height: 175px;
-}
 .full-width {
   width: 100%;
-}
-.relative {
-  position: relative;
 }
 .absolute {
   position: absolute;
@@ -43,7 +37,10 @@
   justify-content: center;
 }
 .container-padding {
-  padding: 0 10rem;
+  padding: 2rem 10rem;
+}
+.border-yellow {
+  border-top: 10px solid #f8df1f;
 }
 body {
   display: flex;
@@ -54,7 +51,7 @@ body {
 }
 nav {
   width: 100%;
-  padding: 0 10rem;
+  padding: 2rem 10rem;
   background-color: #f8df1f;
 }
 nav ul {
@@ -65,9 +62,10 @@ nav ul li {
   font-size: 18px;
   font-weight: 500;
   color: #050500;
+  cursor: pointer;
   list-style: none;
   display: inline-block;
-  padding: 25px;
+  padding: 0 25px;
   text-transform: uppercase;
 }
 nav ul li:first-of-type {
@@ -81,10 +79,10 @@ header {
   flex: 1;
   flex-basis: 100%;
   flex-wrap: wrap;
-  position: relative;
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 header .overlay {
   width: 100%;
@@ -110,16 +108,13 @@ header .overlay-items {
   z-index: 3;
 }
 header .overlay-items .banner-logo {
-  width: 325px;
-  height: 175px;
   display: flex;
   flex: 1;
   flex-basis: 100%;
   flex-wrap: wrap;
+  width: 325px;
+  height: 175px;
   margin-bottom: 1rem;
-}
-header .overlay-items button {
-  padding: 15px 30px;
 }
 button {
   font-family: 'Roboto', sans-serif;
@@ -132,16 +127,47 @@ button {
   cursor: pointer;
   border: none;
   margin: auto;
+  padding: 15px 30px;
 }
 section {
-  padding: 0 10rem;
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  padding: 2rem 10rem;
 }
-section h2 {
+section article {
+  max-width: 66%;
+}
+section article h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 500;
   text-transform: uppercase;
 }
-section h2 span {
+section article h2 span {
   color: #ee252f;
+}
+section img {
+  margin: auto;
+}
+section:last-of-type {
+  background-color: #f3f3f3;
+}
+footer {
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 10rem;
+  border-top: 10px solid #f8df1f;
+  background-color: #080801;
+}
+footer img {
+  width: 300px;
+  height: 125px;
 }

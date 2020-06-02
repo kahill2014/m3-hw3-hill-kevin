@@ -14,7 +14,7 @@ nav {
       .link();
       list-style: none;
       display: inline-block;
-      padding: 25px;
+      padding: 0 25px;
       text-transform: @upper;
       &:first-of-type {
         padding-left: 0;
@@ -27,9 +27,9 @@ nav {
 }
 header {
   .flex();
-  .relative();
   .full-width();
   .center();
+  position: relative;
   .overlay {
     .full-width();
     .absolute();
@@ -49,12 +49,10 @@ header {
     margin-top: -2rem;
     z-index: 3;
     .banner-logo {
-      .logo();
       .flex();
+      width: 325px;
+      height: 175px;
       margin-bottom: 1rem;
-    }
-    button {
-      padding: 15px 30px;
     }
   }
 }
@@ -62,14 +60,38 @@ button {
   .button();
   border: none;
   margin: auto;
+  padding: 15px 30px;
 }
 section {
+  .flex();
+  flex-wrap: nowrap;
   .container-padding();
-  h2 {
-    .heading();
-    text-transform: @upper;
-    span {
-      color: @red;
+  article{
+    max-width: 66%;
+    h2 {
+      .heading();
+      text-transform: @upper;
+      span {
+        color: @red;
+      }
     }
+  }
+  img {
+    margin: auto;
+  }
+  &:last-of-type{
+    background-color: @gray;
+  }
+}
+footer {
+  .flex();
+  .center();
+  .full-width();
+  .container-padding();
+  .border-yellow();
+  background-color: @black;
+  img {
+    width: 300px;
+    height: 125px;
   }
 }
