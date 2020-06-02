@@ -1,11 +1,14 @@
 @import 'mixins';
 
 body{
+  .flex();
   margin: 0;
 }
 header {
+  .flex();
   .relative();
   .full-width();
+  .center();
   .overlay {
     .full-width();
     .absolute();
@@ -18,10 +21,24 @@ header {
     .full-width();
     z-index: 1;
   }
-  .banner-logo {
+  .overlay-items {
+    .flex();
     .absolute();
     .center();
-    .logo();
+    margin-top: -2rem;
     z-index: 3;
+    .banner-logo {
+      .logo();
+      .flex();
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 15px 30px;
+    }
   }
+}
+button {
+  .button();
+  border: none;
+  margin: auto;
 }
