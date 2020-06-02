@@ -4,6 +4,19 @@ body{
   .flex();
   margin: 0;
 }
+nav {
+  .full-width();
+  background-color: @yellow;
+  ul {
+    li {
+      .link();
+      list-style: none;
+      display: inline-block;
+      padding: 20px;
+      text-transform: @upper;
+    }
+  }
+}
 header {
   .flex();
   .relative();

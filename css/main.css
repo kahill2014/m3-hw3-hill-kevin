@@ -8,6 +8,12 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #050500;
+}
 .heading {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -42,6 +48,20 @@ body {
   flex-basis: 100%;
   flex-wrap: wrap;
   margin: 0;
+}
+nav {
+  width: 100%;
+  background-color: #f8df1f;
+}
+nav ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #050500;
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  text-transform: uppercase;
 }
 header {
   display: flex;
