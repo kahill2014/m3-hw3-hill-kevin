@@ -1,3 +1,28 @@
-* {
+.button {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #050500;
+  background-color: #f8df1f;
+  border-radius: 8px;
+}
+.overlay {
+  background-color: #3b3838;
+  opacity: 33%;
+}
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.banner {
+  background-color: #3b3838;
+  opacity: 33%;
+}
+.banner .banner-img {
+  width: 100%;
+}
+.banner .logo-img {
+  margin: auto;
 }
