@@ -6,14 +6,22 @@ body{
 }
 nav {
   .full-width();
+  .container-padding();
   background-color: @yellow;
   ul {
+    padding-left: 0;
     li {
       .link();
       list-style: none;
       display: inline-block;
-      padding: 20px;
+      padding: 25px;
       text-transform: @upper;
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:last-of-type {
+        color: @red;
+      }
     }
   }
 }
@@ -54,4 +62,14 @@ button {
   .button();
   border: none;
   margin: auto;
+}
+section {
+  .container-padding();
+  h2 {
+    .heading();
+    text-transform: @upper;
+    span {
+      color: @red;
+    }
+  }
 }

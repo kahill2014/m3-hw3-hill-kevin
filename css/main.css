@@ -42,6 +42,9 @@
   align-items: center;
   justify-content: center;
 }
+.container-padding {
+  padding: 0 10rem;
+}
 body {
   display: flex;
   flex: 1;
@@ -51,7 +54,11 @@ body {
 }
 nav {
   width: 100%;
+  padding: 0 10rem;
   background-color: #f8df1f;
+}
+nav ul {
+  padding-left: 0;
 }
 nav ul li {
   font-family: 'Roboto', sans-serif;
@@ -60,8 +67,14 @@ nav ul li {
   color: #050500;
   list-style: none;
   display: inline-block;
-  padding: 20px;
+  padding: 25px;
   text-transform: uppercase;
+}
+nav ul li:first-of-type {
+  padding-left: 0;
+}
+nav ul li:last-of-type {
+  color: #ee252f;
 }
 header {
   display: flex;
@@ -119,4 +132,16 @@ button {
   cursor: pointer;
   border: none;
   margin: auto;
+}
+section {
+  padding: 0 10rem;
+}
+section h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section h2 span {
+  color: #ee252f;
 }
