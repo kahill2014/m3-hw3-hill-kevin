@@ -5,6 +5,7 @@ body{
   margin: 0;
 }
 nav {
+  .flex();
   .full-width();
   .container-padding();
   background-color: @yellow;
@@ -24,6 +25,9 @@ nav {
       }
     }
   }
+  @media @tablet {
+    .center();
+  }
 }
 header {
   .flex();
@@ -41,26 +45,38 @@ header {
   .banner-img {
     .full-width();
     z-index: 1;
+    @media @mobile {
+      min-height: 200px;
+    }
   }
   .overlay-items {
     .flex();
     .absolute();
     .center();
-    margin-top: -2rem;
     z-index: 3;
     .banner-logo {
       .flex();
-      width: 325px;
-      height: 175px;
+      width: 20vw;
+      height: 10vw;
       margin-bottom: 1rem;
+      @media @tablet {
+        width: 15vw;
+        height: 10vw;
+      }
+      @media @mobile {
+        width: 15vw;
+        height: 17.5vw;
+      }
+    }
+    button {
+      @media @mobile {
+        padding: .75rem;
+      }
     }
   }
 }
 button {
   .button();
-  border: none;
-  margin: auto;
-  padding: 15px 30px;
 }
 section {
   .flex();
