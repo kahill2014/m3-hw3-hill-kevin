@@ -52,6 +52,11 @@
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 559px) {
+  .container-padding {
+    padding: 2rem 10px;
+  }
+}
 body {
   display: flex;
   flex: 1;
@@ -71,6 +76,11 @@ nav {
 @media only screen and (min-width: 560px) and (max-width: 959px) {
   nav {
     padding: 2rem;
+  }
+}
+@media only screen and (max-width: 559px) {
+  nav {
+    padding: 2rem 10px;
   }
 }
 nav ul {
@@ -200,16 +210,36 @@ section {
   flex: 1;
   flex-basis: 100%;
   flex-wrap: wrap;
-  flex-wrap: nowrap;
   padding: 2rem 10rem;
+  flex-wrap: nowrap;
 }
 @media only screen and (min-width: 560px) and (max-width: 959px) {
   section {
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 559px) {
+  section {
+    padding: 2rem 10px;
+  }
+}
+@media only screen and (max-width: 559px) {
+  section {
+    flex-wrap: wrap;
+  }
+}
 section article {
   max-width: 66%;
+}
+@media only screen and (min-width: 560px) and (max-width: 959px) {
+  section article {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 559px) {
+  section article {
+    max-width: 100%;
+  }
 }
 section article h2 {
   font-family: 'Roboto', sans-serif;
@@ -221,7 +251,8 @@ section article h2 span {
   color: #ee252f;
 }
 section img {
-  margin: auto;
+  margin: 20px auto;
+  align-self: center;
 }
 section:last-of-type {
   background-color: #f3f3f3;
@@ -241,6 +272,11 @@ footer {
 @media only screen and (min-width: 560px) and (max-width: 959px) {
   footer {
     padding: 2rem;
+  }
+}
+@media only screen and (max-width: 559px) {
+  footer {
+    padding: 2rem 10px;
   }
 }
 footer img {

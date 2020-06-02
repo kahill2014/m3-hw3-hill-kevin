@@ -91,10 +91,19 @@ button {
 }
 section {
   .flex();
-  flex-wrap: nowrap;
   .container-padding();
+  flex-wrap: nowrap;
+  @media @mobile {
+    flex-wrap: wrap;
+  }
   article{
     max-width: 66%;
+    @media @tablet {
+      max-width: 50%;
+    }
+    @media @mobile {
+      max-width: 100%;
+    }
     h2 {
       .heading();
       text-transform: @upper;
@@ -104,7 +113,8 @@ section {
     }
   }
   img {
-    margin: auto;
+    margin: 20px auto;
+    align-self: center;
   }
   &:last-of-type{
     background-color: @gray;
