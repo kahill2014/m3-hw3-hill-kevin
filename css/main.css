@@ -10,6 +10,7 @@
 .overlay {
   background-color: #3b3838;
   opacity: 33%;
+  position: absolute;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -19,10 +20,11 @@
 .banner {
   background-color: #3b3838;
   opacity: 33%;
+  position: absolute;
 }
 .banner .banner-img {
   width: 100%;
 }
-.banner .logo-img {
+.banner .banner-logo {
   margin: auto;
 }
