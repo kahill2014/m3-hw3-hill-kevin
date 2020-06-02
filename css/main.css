@@ -7,24 +7,58 @@
   background-color: #f8df1f;
   border-radius: 8px;
 }
-.overlay {
-  background-color: #3b3838;
-  opacity: 33%;
-  position: absolute;
-}
 .heading {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 500;
 }
-.banner {
-  background-color: #3b3838;
-  opacity: 33%;
-  position: absolute;
+.logo {
+  width: 450px;
+  height: 200px;
 }
-.banner .banner-img {
+.full-width {
   width: 100%;
 }
-.banner .banner-logo {
-  margin: auto;
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.center {
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -225px;
+}
+body {
+  margin: 0;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+header .overlay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #3b3838;
+  opacity: 33%;
+  z-index: 2;
+}
+header .banner-img {
+  width: 100%;
+  z-index: 1;
+}
+header .banner-logo {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -225px;
+  width: 450px;
+  height: 200px;
+  z-index: 3;
 }

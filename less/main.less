@@ -1,11 +1,27 @@
 @import 'mixins';
 
-.banner {
-  .overlay();
+body{
+  margin: 0;
+}
+header {
+  .relative();
+  .full-width();
+  .overlay {
+    .full-width();
+    .absolute();
+    height: 100%;
+    background-color: @overlay-black;
+    opacity: @overlay-opacity;
+    z-index: 2;
+  }
   .banner-img {
-    width: 100%;
+    .full-width();
+    z-index: 1;
   }
   .banner-logo {
-    margin: auto;
+    .absolute();
+    .center();
+    .logo();
+    z-index: 3;
   }
 }
